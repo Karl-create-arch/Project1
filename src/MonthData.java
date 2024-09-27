@@ -1,8 +1,8 @@
 public class MonthData {
-    int[] days = new int[30]; // Массив для хранения шагов за каждый день месяца
+    int[] days = new int[30];
 
     public void setSteps(int day, int steps) {
-        days[day - 1] = steps; // День - 1 для корректной индексации
+        days[day - 1] = steps;
     }
 
     public int getSteps(int day) {
