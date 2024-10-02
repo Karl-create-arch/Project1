@@ -27,6 +27,7 @@ public class MonthData {
         return max;
     }
 
+    // TODO переделать тип возвращаемого значения, чтоб не было знаков после запятой
     public double getAverageSteps() {
         return getTotalSteps() / 30.0;
     }

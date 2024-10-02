@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // TODO вынести scanner и stepTracker в поля класса
         Scanner scanner = new Scanner(System.in);
         StepTracker stepTracker = new StepTracker();
 

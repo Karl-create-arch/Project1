@@ -1,5 +1,6 @@
 public class StepTracker {
     MonthData[] months = new MonthData[12];
+    // TODO лучше бы удалить эти дурацкие комментарии
     int dailyStep = 10000; // Цель по умолчанию
     Converter converter = new Converter();
     String[] monthNames = {"Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
@@ -27,6 +28,7 @@ public class StepTracker {
     }
 
     public void printStatistic(int month) {
+        // TODO лучше бы удалить эти дурацкие комментарии
         MonthData monthData = months[month - 1]; // Преобразуем месяц в индекс массива
         System.out.println("Статистика за " + monthNames[month - 1] + ":");
         System.out.println("Шаги по дням:");
@@ -37,6 +39,7 @@ public class StepTracker {
         int totalSteps = monthData.getTotalSteps();
         System.out.println("Общее количество шагов за месяц: " + totalSteps);
         System.out.println("Максимальное количество шагов за месяц: " + monthData.getMaxSteps());
+        // TODO это можно вынести в единый метод конвертации, оставив тут только его вызов
         System.out.println("Среднее количество шагов за месяц: " + monthData.getAverageSteps());
         System.out.println("Пройденная дистанция (в км): " + converter.convertToKm(totalSteps));
         System.out.println("Сожжённые килокалории: " + converter.convertStepsToKilocalories(totalSteps));
